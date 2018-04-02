@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">FoodTruckUser</string>
+    <string name="please_enter_your_registered_email_address_to_receive_otp">Please enter your
+        registered email address to receive OTP</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forget">Forget?</string>
+    <string name="login">Login</string>
+    <string name="new_user_sign_up">New User? Sign up</string>
+    <string name="full_name">Full name</string>
+    <string name="_1">+1</string>
+    <string name="phone_number">Phone number</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="i_accept_the_terms_and_conditions_of_the_application">I accept the terms and
+        conditions of the application.</string>
+    <string name="sign_up">Sign up</string>
+    <string name="existing_user_check_in">Existing user? Check in</string>
+    <string name="next">Next</string>
+    <string name="enter_otp_received_at_your_registered_email">Enter OTP received at your registered
+        email</string>
+    <string name="resend">Resend</string>
+    <string name="otp">OTP</string>
+    <string name="please_enter_new_password">Please enter new Password</string>
+    <string name="i_accept">I accept</string>
+    <string name="terms_and_conditions">terms and conditions</string>
+    <string name="of_the_application">of the application</string>
+    <string name="search">Search</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="filter">Filter</string>
+</resources>

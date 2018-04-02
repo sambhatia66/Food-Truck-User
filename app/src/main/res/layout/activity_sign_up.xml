@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.fluper.foodtruckuser.activities.SignUpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="ScrollViewSize">
+
+        <ImageView
+            android:id="@+id/iv_login_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_40"
+            android:padding="@dimen/dp_5"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo"
+            tools:ignore="ContentDescription" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_sign_up_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:layout_below="@id/iv_login_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <EditText
+                android:id="@+id/et_sign_up_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:hint="@string/full_name"
+                android:inputType="text"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_15" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:id="@+id/til_sign_up_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:layout_below="@+id/til_sign_up_full_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40">
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_15"
+                tools:ignore="TextFields" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_sign_up_phone_no"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:layout_below="@+id/til_sign_up_email"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_sign_up_country_code"
+                    android:layout_width="@dimen/dp_50"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/_1"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sp_15"
+                    tools:ignore="LabelFor,TextFields" />
+
+                <View
+                    android:layout_width="@dimen/dp_1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dp_10"
+                    android:alpha="0.5"
+                    android:background="@color/colorBlack" />
+
+
+                <EditText
+                    android:id="@+id/et_sign_up_phone_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/phone_number"
+                    android:inputType="phone"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sp_15"
+                    tools:ignore="TextFields" />
+
+            </LinearLayout>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_sign_up_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:layout_below="@+id/til_sign_up_phone_no"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40">
+
+            <EditText
+                android:id="@+id/et_sign_up_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_15"
+                tools:ignore="TextFields" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_sign_up_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:layout_below="@+id/til_sign_up_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40">
+
+            <EditText
+                android:id="@+id/et_sign_up_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:hint="@string/confirm_password"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_15"
+                android:inputType="textPassword"
+                tools:ignore="TextFields" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btn_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_below="@id/checkBox"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/btn_custom_red"
+            android:text="@string/sign_up"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_15"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_check_in"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_below="@id/btn_sign_up"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/btn_custom_white"
+            android:text="@string/existing_user_check_in"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_15"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignStart="@id/til_sign_up_confirm_password"
+            android:layout_below="@id/til_sign_up_confirm_password"
+            android:background="@drawable/checkbox_background"
+            android:button="@drawable/checkbox_button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/til_sign_up_confirm_password"
+            android:layout_marginLeft="@dimen/dp_70"
+            android:layout_marginTop="@dimen/dp_3"
+            android:text="@string/i_accept"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dp_12"
+            tools:ignore="RtlHardcoded,SpUsage" />
+
+        <TextView
+            android:id="@+id/tv_terms_conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/til_sign_up_confirm_password"
+            android:layout_marginLeft="@dimen/dp_120"
+            android:layout_marginTop="@dimen/dp_3"
+            android:text="@string/terms_and_conditions"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/dp_12"
+            tools:ignore="RtlHardcoded,SpUsage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/til_sign_up_confirm_password"
+            android:layout_marginLeft="@dimen/dp_240"
+            android:layout_marginTop="@dimen/dp_3"
+            android:text="@string/of_the_application"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dp_12"
+            tools:ignore="RtlHardcoded,SpUsage" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/btn_check_in"
+            android:layout_marginTop="@dimen/dp_20"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_login"
+            tools:ignore="ContentDescription" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

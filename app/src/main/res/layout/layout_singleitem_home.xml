@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_200"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_10"
+    android:elevation="@dimen/dp_4"
+    app:cardCornerRadius="@dimen/dp_20">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_food"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/main_list_item" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.6"
+            android:background="@color/colorBlack" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_truck"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:src="@drawable/img_placeholder_sm"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="@dimen/dp_1" />
+
+        <TextView
+            android:id="@+id/tv_truck_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_140"
+            android:layout_toRightOf="@+id/civ_truck"
+            android:text="Matilde's Recipe"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_14"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_truck_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_truck_name"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_toRightOf="@+id/civ_truck"
+            android:text="Peruvian, Burgers"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_12"
+            android:textStyle="bold" />
+
+
+        <RatingBar
+            android:id="@+id/rating_bar_truck"
+            style="@style/rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_truck_location"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_toRightOf="@+id/civ_truck"
+            android:background="@android:color/transparent"
+            android:numStars="5"
+            android:isIndicator="true" />
+
+
+        <ImageView
+            android:id="@+id/iv_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dp_12"
+            android:layout_marginRight="@dimen/dp_10"
+            android:padding="@dimen/dp_5"
+            android:src="@drawable/rating_white" />
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

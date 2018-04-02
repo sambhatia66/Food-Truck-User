@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_2"
+    android:background="@color/colorPrimary"
+    android:layout_alignParentBottom="true"
+    />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_profile"
+        android:layout_width="@dimen/dp_45"
+        android:layout_height="match_parent"
+        android:src="@drawable/sm_profile"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="@dimen/dp_2"
+        android:scaleType="centerCrop"
+        android:fitsSystemWindows="true"
+        android:padding="@dimen/dp_5"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_centerVertical="true"
+
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fitsSystemWindows="true"
+        android:scaleType="fitXY"
+        android:padding="@dimen/dp_15"
+        android:src="@drawable/logo_home" />
+    <ImageView
+        android:id="@+id/iv_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cart_red"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/dp_5"
+        android:layout_centerVertical="true"/>
+    <ImageView
+        android:id="@+id/iv_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/map_red"
+        android:layout_toLeftOf="@id/iv_cart"
+        android:padding="@dimen/dp_5"
+        android:layout_centerVertical="true"/>
+
+
+</RelativeLayout>

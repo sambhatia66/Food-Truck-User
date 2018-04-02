@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fluper.foodtruckuser.activities.OTPActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_header" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_80"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:text="@string/enter_otp_received_at_your_registered_email"
+        android:textSize="@dimen/sp_15"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/rl_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_160"
+            android:padding="@dimen/dp_5"
+            android:text="@string/resend"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_15"
+            tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_140">
+
+            <EditText
+                android:id="@+id/et_otp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:hint="@string/otp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/sp_15"
+                android:inputType="number"
+                tools:ignore="TextFields" />
+
+        </android.support.design.widget.TextInputLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_below="@+id/rl_otp"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/btn_custom_red"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_15"
+        android:textStyle="bold" />
+
+</RelativeLayout>
