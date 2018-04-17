@@ -1,5 +1,6 @@
 package com.fluper.foodtruckuser.activities;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -23,6 +24,7 @@ public class NewPasswordActivity extends AppCompatActivity {
     private TextView header;
     private ImageView ivBack;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,7 +60,6 @@ public class NewPasswordActivity extends AppCompatActivity {
                 if ((newPassword.equals(confirmPassword))) {
                     startActivity(new Intent(NewPasswordActivity.this, MainActivity.class));
                     finishAffinity();
-                    return;
                 } else
                     Toast.makeText(NewPasswordActivity.this, "Password not matched", Toast.LENGTH_SHORT).show();
             }

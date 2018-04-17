@@ -1,5 +1,6 @@
 package com.fluper.foodtruckuser.activities;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -24,6 +25,7 @@ public class ChangePasswordActivity extends AppCompatActivity {
     private EditText etConfirmNewPAssword;
     private Button btnSave;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,8 +48,8 @@ public class ChangePasswordActivity extends AppCompatActivity {
 
     private void validateFields() {
 
-        /**
-         * Represents the validation for the fields.
+        /*
+          Represents the validation for the fields.
          */
         String internalPassword = etInternalPassword.getText().toString().trim();
         String newPassword = etNewPassword.getText().toString().trim();
@@ -64,6 +66,8 @@ public class ChangePasswordActivity extends AppCompatActivity {
             etNewPassword.requestFocus();
             return;
         }
+        // todo maitain RTL...
+        // todo externalize all string at one go...
         if (TextUtils.isEmpty(confirmNewPassword)) {
             etConfirmNewPAssword.setError("Re-enter new password!");
             etConfirmNewPAssword.requestFocus();
@@ -79,7 +83,6 @@ public class ChangePasswordActivity extends AppCompatActivity {
             finish();
         } else {
             Toast.makeText(this, "Password fields not matches", Toast.LENGTH_SHORT).show();
-            return;
 
         }
     }

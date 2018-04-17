@@ -16,7 +16,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/dp_10"
-        android:layout_marginTop="@dimen/dp_60">
+        android:layout_marginTop="@dimen/dp_60"
+        tools:ignore="RtlHardcoded">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/civ_user_profile"
@@ -72,19 +73,21 @@
         android:layout_below="@id/layout_info"
         android:layout_marginLeft="@dimen/dp_40"
         android:orientation="vertical"
-        android:padding="@dimen/dp_15">
+        android:padding="@dimen/dp_15"
+        tools:ignore="RtlHardcoded">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:scaleType="fitXY"
-            android:src="@drawable/time_red" />
+            android:src="@drawable/time_red"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Order History"
+            android:text="@string/order_history"
             android:textColor="@color/colorBlack"
             android:textSize="@dimen/sp_12"
             android:textStyle="bold" />
@@ -108,19 +111,21 @@
         android:layout_below="@id/layout_info"
         android:layout_marginRight="@dimen/dp_40"
         android:orientation="vertical"
-        android:padding="@dimen/dp_15">
+        android:padding="@dimen/dp_15"
+        tools:ignore="RtlHardcoded">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:scaleType="fitXY"
-            android:src="@drawable/car_red" />
+            android:src="@drawable/car_red"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Reverse History"
+            android:text="@string/reverse_history"
             android:textColor="@color/colorBlack"
             android:textSize="@dimen/sp_12"
             android:textStyle="bold" />
@@ -134,7 +139,8 @@
         android:layout_marginLeft="@dimen/dp_80"
         android:layout_marginTop="90dp"
         android:alpha="0.5"
-        android:background="@color/colorDarkGrey" />
+        android:background="@color/colorDarkGrey"
+        tools:ignore="RtlHardcoded" />
 
     <View
         android:layout_width="@dimen/dp_30"
@@ -144,7 +150,8 @@
         android:layout_marginRight="@dimen/dp_80"
         android:layout_marginTop="90dp"
         android:alpha="0.5"
-        android:background="@color/colorDarkGrey" />
+        android:background="@color/colorDarkGrey"
+        tools:ignore="RtlHardcoded" />
 
     <LinearLayout
         android:id="@+id/layout_feedback"
@@ -154,19 +161,21 @@
         android:layout_marginLeft="@dimen/dp_50"
         android:layout_marginTop="@dimen/dp_100"
         android:orientation="vertical"
-        android:padding="@dimen/dp_20">
+        android:padding="@dimen/dp_20"
+        tools:ignore="RtlHardcoded">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:scaleType="fitXY"
-            android:src="@drawable/user_rating_red" />
+            android:src="@drawable/user_rating_red"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Feedback"
+            android:text="@string/feedback"
             android:textColor="@color/colorBlack"
             android:textSize="@dimen/sp_12"
             android:textStyle="bold" />
@@ -191,19 +200,21 @@
         android:layout_marginRight="@dimen/dp_50"
         android:layout_marginTop="@dimen/dp_100"
         android:orientation="vertical"
-        android:padding="@dimen/dp_20">
+        android:padding="@dimen/dp_20"
+        tools:ignore="RtlHardcoded">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:scaleType="fitXY"
-            android:src="@drawable/support_red" />
+            android:src="@drawable/support_red"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Support for"
+            android:text="@string/support_for"
             android:textColor="@color/colorBlack"
             android:textSize="@dimen/sp_12"
             android:textStyle="bold" />
@@ -234,10 +245,11 @@
             android:drawableRight="@drawable/next_red"
             android:gravity="center_vertical"
             android:padding="@dimen/dp_15"
-            android:text="Favorites"
+            android:text="@string/favorites"
             android:textColor="@color/colorBlack"
             android:textSize="@dimen/sp_12"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded" />
 
         <View
             android:layout_width="match_parent"
@@ -256,10 +268,11 @@
             android:drawablePadding="@dimen/dp_18"
             android:gravity="center_vertical"
             android:padding="@dimen/dp_15"
-            android:text="Notifications"
+            android:text="@string/notifications"
             android:textColor="@color/colorBlack"
             android:textSize="@dimen/sp_12"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded" />
 
         <Switch
             android:id="@+id/switch_notification"
@@ -268,7 +281,8 @@
             android:layout_alignParentEnd="true"
             android:layout_below="@id/tv_favorites"
             android:layout_marginRight="@dimen/dp_10"
-            android:layout_marginTop="@dimen/dp_10" />
+            android:layout_marginTop="@dimen/dp_10"
+            tools:ignore="RtlHardcoded" />
 
         <View
             android:layout_width="match_parent"
@@ -291,10 +305,11 @@
             android:drawableRight="@drawable/next_red"
             android:gravity="center_vertical"
             android:padding="@dimen/dp_15"
-            android:text="Change Password"
+            android:text="@string/change_password"
             android:textColor="@color/colorBlack"
             android:textSize="@dimen/sp_12"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded" />
 
 
     </RelativeLayout>
@@ -309,7 +324,7 @@
         android:layout_marginLeft="@dimen/dp_50"
         android:layout_marginRight="@dimen/dp_50"
         android:background="@drawable/btn_custom_red"
-        android:text="Disconnect"
+        android:text="@string/disconnect"
         android:textAllCaps="false"
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/sp_12"

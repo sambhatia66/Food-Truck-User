@@ -1,5 +1,6 @@
 package com.fluper.foodtruckuser.activities;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.fluper.foodtruckuser.R;
 
@@ -23,6 +25,7 @@ public class MyAccountEditActivity extends AppCompatActivity {
     private EditText etPhone;
     private Button btnSave;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +42,7 @@ public class MyAccountEditActivity extends AppCompatActivity {
         String name = etFullName.getText().toString().trim();
         String email = etEmail.getText().toString().trim();
         String phone = etPhone.getText().toString().trim();
+        String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
 
         if (TextUtils.isEmpty(name)) {
             etFullName.setError("Enter full name!");
@@ -46,25 +50,26 @@ public class MyAccountEditActivity extends AppCompatActivity {
             return;
         }
 
-        if (TextUtils.isEmpty(email)) {
+        else if (TextUtils.isEmpty(email)) {
             etEmail.setError("Enter email!");
             etEmail.requestFocus();
             return;
         }
-        if (TextUtils.isEmpty(phone)) {
+        else if (TextUtils.isEmpty(phone)) {
             etPhone.setError("Enter phone no.!");
             etPhone.requestFocus();
             return;
         }
-        if (phone.length() < 8) {
+        else if (phone.length() < 8) {
             etPhone.setError("Invalid phone no.");
             etPhone.requestFocus();
             return;
-        } else {
-
+        }
+        if (email.matches(emailPattern)){
             startActivity(new Intent(MyAccountEditActivity.this, MyAccountActivity.class));
             finish();
-        }
+        }else
+            Toast.makeText(this, "Enter a valid email!", Toast.LENGTH_SHORT).show();
 
     }
 

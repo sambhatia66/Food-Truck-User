@@ -1,5 +1,6 @@
 package com.fluper.foodtruckuser.activities;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -20,6 +21,7 @@ public class OTPActivity extends AppCompatActivity {
     private RelativeLayout toolbar;
     private TextView header;
     private ImageView ivBack;
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,7 +54,10 @@ public class OTPActivity extends AppCompatActivity {
                 if (TextUtils.isEmpty(otp)) {
                     etOtp.setError("Enter OTP");
                     return;
-                } else
+                }
+                if (otp.length()< 4){
+                    etOtp.setError("Invalid OTP!");
+                }else
                     startActivity(new Intent(OTPActivity.this, NewPasswordActivity.class));
             }
         });

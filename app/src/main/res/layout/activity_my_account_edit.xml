@@ -42,7 +42,7 @@
                     android:id="@+id/et_full_name"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dp_50"
-                    android:hint="Complete Name"
+                    android:hint="@string/complete_name"
                     android:inputType="text"
                     android:padding="@dimen/dp_5"
                     android:textColor="@color/colorPrimary"
@@ -60,7 +60,7 @@
                     android:inputType="textEmailAddress"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dp_50"
-                    android:hint="Email"
+                    android:hint="@string/email"
                     android:padding="@dimen/dp_5"
                     android:textColor="@color/colorPrimary"
                     android:textSize="@dimen/sp_15" />
@@ -101,7 +101,8 @@
                     android:padding="@dimen/dp_5"
                     android:textColor="@color/colorPrimary"
                     android:textSize="@dimen/sp_15"
-                    tools:ignore="TextFields" />
+                    tools:ignore="TextFields"
+                    android:maxLength="12"/>
 
             </LinearLayout>
 
@@ -112,7 +113,7 @@
                 android:layout_below="@id/phone_no"
                 android:layout_marginTop="@dimen/dp_20"
                 android:background="@drawable/btn_custom_red"
-                android:text="Save"
+                android:text="@string/save"
                 android:textAllCaps="false"
                 android:textColor="@color/colorWhite"
                 android:textSize="@dimen/sp_15"

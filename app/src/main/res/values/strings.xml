@@ -11,8 +11,6 @@
     <string name="_1">+1</string>
     <string name="phone_number">Phone number</string>
     <string name="confirm_password">Confirm password</string>
-    <string name="i_accept_the_terms_and_conditions_of_the_application">I accept the terms and
-        conditions of the application.</string>
     <string name="sign_up">Sign up</string>
     <string name="existing_user_check_in">Existing user? Check in</string>
     <string name="next">Next</string>
@@ -27,4 +25,61 @@
     <string name="search">Search</string>
     <string name="title_activity_maps">Map</string>
     <string name="filter">Filter</string>
+    <string name="terms_condition_first">By downloading or using the app, these terms will
+        automatically apply to you – you should make sure therefore that you read them carefully
+        before using the app. We are offering you this app to use for your own personal use without
+        cost, but you should be aware that you cannot send it on to anyone else, and you’re not
+        allowed to copy, or modify the app, any part of the app, or our trademarks in any way.
+        You’re not allowed to attempt to extract the source code of the app, and you also shouldn’t
+        try to translate the app into other languages, or make derivative versions. The app itself,
+        and all the trade marks, copyright, database rights and other intellectual property rights
+        related to it, still belong to FoodTruck.</string>
+    <string name="terms_conditions_second">At the bottom of these terms and conditions you will be
+        able to find links to our website where we set out our Privacy Policy, Acceptable Use of the
+        app, and the general Terms and Conditions for passengers and baggage, which will be relevant
+        if you use the app to book flights with easyJet in the future.</string>
+    <string name="book_food_truck">Book Food Truck</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hamberger">A king Size burger is a sandwich consisting of one or more cooked
+        patties of ground meat, usually beef, placed inside a sliced bread roll or bun.</string>
+    <string name="describe">Our mission at Yes Bosz is not only to cater great tasting food, but
+        have efficient and friendly service because customer satisfaction is paramount. We want to
+        be the restaurant choice for people from all walks of life. Try Yes Bosz now. You can use
+        our order online feature and we will deliver your food right before you get off your
+        computer.\n\n
+         Try our wide range of exotic and assorted food items that will take you on to a culinary
+        ride. Enjoy our delicacies and pamper yourself. Have a look at our detailed menu and choose
+        your favourite.\n\n
+        USA was the first market we started exporting to, thanks to the large Indianpopulation there.
+        We began with about 15 products, all savouries, because they are a favourite with Indians.
+        Our core emphasis is on delivering healthy, traditional and delicious foods. Our persistent
+        focus is on quality and freshness; we realize our responsibility to continue delivering food
+        that are customers admire around the world. After all, the award that we cherish the most is
+        the one given by our customers.\n\n
+        What began as a small-town enterprise in india is today a globalphenomenon. Haldirams is a
+        way of life for Indians no matter whichcountry they live in.And the Countries they live in
+        are also fast developing a penchant for these products.\n
+
+
+    </string>
+    <string name="internal_password">Internal password</string>
+    <string name="new_password">New password</string>
+    <string name="confirm_new_password">Confirm new password</string>
+    <string name="save">Save</string>
+    <string name="order_history">Order History</string>
+    <string name="reverse_history">Reverse History</string>
+    <string name="feedback">Feedback</string>
+    <string name="support_for">Support for</string>
+    <string name="favorites">Favorites</string>
+    <string name="notifications">Notifications</string>
+    <string name="change_password">Change Password</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="complete_name">Complete Name</string>
+    <string name="matilde_s_recipe">Matilde\'s Recipe</string>
+    <string name="peruvian_burgers">Peruvian, Burgers</string>
+    <string name="king_size_burger">King Size Burger</string>
+    <string name="_12">$12</string>
+    <string name="did_you_forget_your_password">Did you forget your password?</string>
+
 </resources>

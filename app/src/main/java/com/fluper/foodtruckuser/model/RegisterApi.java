@@ -7,14 +7,16 @@ import com.google.gson.annotations.SerializedName;
  */
 
 public class RegisterApi {
-    @SerializedName("token")
-    private String token;
 
-    public String getToken() {
-        return token;
+    @SerializedName("message")
+    public String message;
+
+    @SerializedName("result")
+    public SignUpModel signUpModelModel;
+    public SignInModel signInModel;
+
+
+
+
     }
 
-    public void setToken(String token) {
-        this.token = token;
-    }
-}

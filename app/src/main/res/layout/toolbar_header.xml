@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
-    android:elevation="4dp">
+    android:elevation="4dp"
+    tools:ignore="UnusedAttribute">
 
 
     <View
@@ -16,7 +18,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:src="@drawable/back_red" />
+        android:src="@drawable/back_red"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/tv_header"
@@ -24,10 +27,32 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:padding="10dp"
-        android:text="Did you forget your password?"
+        android:text="@string/did_you_forget_your_password"
         android:textColor="@color/colorPrimary"
         android:textSize="@dimen/sp_15"
         android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/done_red"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/dp_10"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        tools:ignore="ContentDescription" />
+    <ImageView
+        android:id="@+id/iv_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cart_red"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/dp_5"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        tools:ignore="ContentDescription" />
 
 
 </RelativeLayout>

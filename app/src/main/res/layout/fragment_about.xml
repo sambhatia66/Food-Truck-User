@@ -1,0 +1,63 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.fluper.foodtruckuser.activities.AboutFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor sit amet"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/sp_14"/>
+
+            <TextView
+                android:id="@+id/tv_truck_timing"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:text="10:00 AM-09:00 PM"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/sp_12"
+                android:layout_marginRight="@dimen/dp_50"
+                android:textColor="@color/colorBlack"
+                />
+
+            <ImageView
+                android:id="@+id/iv_map"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/map_red"
+                android:padding="@dimen/dp_2" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_about"
+            android:textAlignment="viewStart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_50"
+            android:textSize="@dimen/sp_12"
+            android:text="@string/describe"/>
+
+    </FrameLayout>
+
+
+</layout>

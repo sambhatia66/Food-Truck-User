@@ -1,5 +1,6 @@
 package com.fluper.foodtruckuser.activities;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -34,6 +35,7 @@ public class MyAccountActivity extends AppCompatActivity {
     private Button btnDisconnect;
 
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,37 +75,42 @@ public class MyAccountActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MyAccountActivity.this, MyAccountEditActivity.class));
+
             }
         });
         layoutOrderHistory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MyAccountActivity.this, OrderHistoryActivity.class));
+                finish();
             }
         });
         layoutReverseHistory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MyAccountActivity.this, ReverseHistoryActivity.class));
+                finish();
             }
         });
         tvFavorites.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MyAccountActivity.this, FavoritesActivity.class));
+
             }
         });
         tvChangePassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MyAccountActivity.this, ChangePasswordActivity.class));
+                finish();
             }
         });
         btnDisconnect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MyAccountActivity.this, MainActivity.class));
-                finishAffinity();
+                finishAffinity(); // todo what is finisg v/s finish affinity
             }
         });
 

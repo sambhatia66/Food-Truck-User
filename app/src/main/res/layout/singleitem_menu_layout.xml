@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dp_160"
+    android:layout_height="@dimen/dp_180"
+    android:layout_marginBottom="@dimen/dp_5"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_6"
+    app:cardCornerRadius="@dimen/dp_24"
+    app:cardElevation="@dimen/dp_12">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100"
+            android:scaleType="centerCrop"
+            android:src="@drawable/food_fifteen"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_item"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/king_size_burger"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_12"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/tv_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_22"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_5"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="@dimen/dp_3"
+            android:text="@string/_12"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_12"
+            android:textStyle="bold"
+            tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/tv_item_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_name"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="@string/hamberger"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/sp_9" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

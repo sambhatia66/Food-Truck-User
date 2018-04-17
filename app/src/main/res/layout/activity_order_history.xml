@@ -5,5 +5,5 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.fluper.foodtruckuser.activities.OrderHistoryActivity">
-
+    <!--todo no need of constaint layouty i hope-->
 </android.support.constraint.ConstraintLayout>

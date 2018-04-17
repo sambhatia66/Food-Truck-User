@@ -48,7 +48,9 @@
             android:layout_marginRight="@dimen/dp_40"
             android:layout_marginTop="@dimen/dp_140">
 
-            <EditText
+            <!-- todo create custom view..-->
+            <!-- todo use appcompat classes AppCompatEdotText-->
+            <android.support.v7.widget.AppCompatEditText
                 android:id="@+id/et_otp"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dp_50"
@@ -56,7 +58,8 @@
                 android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/sp_15"
                 android:inputType="number"
-                tools:ignore="TextFields" />
+                tools:ignore="TextFields"
+                android:maxLength="4"/>
 
         </android.support.design.widget.TextInputLayout>
     </RelativeLayout>

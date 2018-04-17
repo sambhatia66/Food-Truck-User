@@ -9,4 +9,47 @@
         android:id="@+id/toolbar"
         layout="@layout/toolbar_header" />
 
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/toolbar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_22"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/sp_15"
+            android:textColor="@color/colorWhite"
+            android:text="Select kitchen "
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_300"
+            android:layout_centerVertical="true"
+            android:text="Restart"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_15"
+            />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_kitchen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_layout"
+        tools:listitem ="@layout/singleitem_filterlist_layout"/>
+
+
+
+
+
+
+
+
 </RelativeLayout>

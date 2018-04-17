@@ -10,7 +10,7 @@
     </style>
     <style name="rating_bar" parent="@android:style/Widget.Holo.RatingBar.Small">
         <item name="android:progressDrawable">@drawable/rating_bar_selector</item>
-        <item name="android:minHeight">10.6sp</item>
-        <item name="android:maxHeight">10.6sp</item>
+        <item name="android:minHeight">12.6sp</item>
+        <item name="android:maxHeight">12.6sp</item>
     </style>
 </resources>

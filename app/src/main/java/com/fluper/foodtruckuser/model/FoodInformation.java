@@ -1,20 +1,23 @@
 package com.fluper.foodtruckuser.model;
 
-import android.widget.ImageView;
-
 import java.io.Serializable;
-
-import de.hdodenhof.circleimageview.CircleImageView;
 
 /**
  * Created by fluper on 27/3/18.
  */
 
+//todo no need of setter i hope.. private variables...
 public class FoodInformation  implements Serializable {
     String truckName;
     String truckLocation;
-    String foodImage;
-    String truckImage;
+    int foodImage;
+    int truckImage;
+
+    public FoodInformation(int truckImage, String truckName, int foodImage) {
+        this.truckImage =truckImage;
+        this.truckName = truckName;
+        this.foodImage = foodImage;
+    }
 
     public String getTruckName() {
         return truckName;
@@ -32,27 +35,23 @@ public class FoodInformation  implements Serializable {
         this.truckLocation = truckLocation;
     }
 
-    public String getFoodImage() {
+    public Integer getFoodImage() {
         return foodImage;
     }
 
-    public void setFoodImage(String foodImage) {
+    public void setFoodImage(Integer foodImage) {
         this.foodImage = foodImage;
     }
 
-    public String getTruckImage() {
+    public Integer getTruckImage() {
         return truckImage;
     }
 
-    public void setTruckImage(String truckImage) {
+    public void setTruckImage(Integer truckImage) {
         this.truckImage = truckImage;
     }
 
-    public FoodInformation(String truckName, String truckLocation, String foodImage, String truckImage){
-        this.truckName = truckName;
-        this.truckLocation = truckLocation;
-        this.foodImage = foodImage;
-        this.truckImage = truckImage;
+
 
     }
-}
+

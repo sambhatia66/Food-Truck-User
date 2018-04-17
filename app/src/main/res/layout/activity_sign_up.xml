@@ -3,10 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fillViewport="true"
     tools:context="com.fluper.foodtruckuser.activities.SignUpActivity">
 
     <RelativeLayout
+        android:id="@+id/relative_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:ignore="ScrollViewSize">
@@ -65,56 +67,75 @@
 
         </android.support.design.widget.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
-            android:id="@+id/til_sign_up_phone_no"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/dp_60"
-            android:layout_below="@+id/til_sign_up_email"
-            android:layout_marginLeft="@dimen/dp_40"
-            android:layout_marginRight="@dimen/dp_40">
 
             <LinearLayout
+                android:id="@+id/ll_phone_no"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="@dimen/dp_60"
+                android:layout_marginLeft="@dimen/dp_40"
+                android:layout_marginRight="@dimen/dp_40"
+                android:layout_below="@+id/til_sign_up_email"
+
                 android:orientation="horizontal">
 
-                <EditText
-                    android:id="@+id/et_sign_up_country_code"
-                    android:layout_width="@dimen/dp_50"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="@string/_1"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="@dimen/sp_15"
-                    tools:ignore="LabelFor,TextFields" />
+              <com.hbb20.CountryCodePicker
+                  android:id="@+id/country_code"
+                  android:layout_width="@dimen/dp_50"
+                  android:layout_marginTop="@dimen/dp_15"
+                  android:layout_height="match_parent"
+                  app:ccp_contentColor="@color/colorPrimary"
+                  app:ccp_textSize="@dimen/sp_15"
+                  app:ccp_showFlag="false"
+                  app:ccp_showNameCode="false"
+                  app:ccp_textGravity="CENTER">
 
+              </com.hbb20.CountryCodePicker>
                 <View
                     android:layout_width="@dimen/dp_1"
                     android:layout_height="match_parent"
-                    android:layout_margin="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_14"
+                    android:layout_marginBottom="@dimen/dp_10"
                     android:alpha="0.5"
                     android:background="@color/colorBlack" />
 
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_60" >
 
                 <EditText
                     android:id="@+id/et_sign_up_phone_no"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="@dimen/dp_10"
                     android:hint="@string/phone_number"
+                    android:layout_marginLeft="@dimen/dp_4"
                     android:inputType="phone"
                     android:textColor="@color/colorPrimary"
                     android:textSize="@dimen/sp_15"
-                    tools:ignore="TextFields" />
+                    tools:ignore="RtlHardcoded,RtlSymmetry,TextFields"
+                    android:maxLength="12"/>
 
+                </android.support.design.widget.TextInputLayout>
             </LinearLayout>
-        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:alpha="0.5"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_below="@id/ll_phone_no"
+            android:background="@color/colorBlack"
+            android:layout_marginBottom="@dimen/dp_10"/>
 
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/til_sign_up_password"
             android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp_4"
             android:layout_height="@dimen/dp_60"
-            android:layout_below="@+id/til_sign_up_phone_no"
+            android:layout_below="@+id/ll_phone_no"
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="@dimen/dp_40"
             android:layout_marginRight="@dimen/dp_40">
@@ -157,7 +178,7 @@
             android:id="@+id/btn_sign_up"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp_40"
-            android:layout_below="@id/checkBox"
+            android:layout_below="@id/check_box"
             android:layout_marginLeft="@dimen/dp_40"
             android:layout_marginRight="@dimen/dp_40"
             android:layout_marginTop="@dimen/dp_10"
@@ -184,13 +205,12 @@
             android:textStyle="bold" />
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/check_box"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_alignStart="@id/til_sign_up_confirm_password"
             android:layout_below="@id/til_sign_up_confirm_password"
-            android:background="@drawable/checkbox_background"
-            android:button="@drawable/checkbox_button" />
+            android:button="@drawable/custom_checkbox" />
 
         <TextView
             android:layout_width="wrap_content"
